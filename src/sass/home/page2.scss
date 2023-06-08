@@ -2,3 +2,32 @@
     height: 70px ;
     background-color: blue;
 }
+.page2Home {
+    border: 1px solid white;
+    background-color: darkslategrey;
+    padding: 5px 20px;
+}
+.p2SecInput{
+    height: 20vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+ #mainColumnSectionP2{
+    display: flex;
+    justify-content: space-evenly;
+ }
+.columnP2{
+    min-width: 20%;
+    min-height: 20vh;
+    border: 1px solid black ;
+}
+
+// tasks
+.taskDivP2{
+    background-color: red;
+    width: 100%;
+    min-height: 80px;
+}
