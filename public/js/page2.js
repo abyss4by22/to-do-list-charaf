@@ -22,6 +22,16 @@ function add(params) {
     alert(`no task written`)
     return
   } 
+  function switchToDoing() {
+    document.getElementById(`doingCol`).appendChild(taskDiv)
+  }
+  function switchtoTodo () {
+    document.getElementById(`toDoCol`).appendChild(taskDiv)
+  }
+  function switchToDone () {
+    document.getElementById(`doneCol`).appendChild(taskDiv)
+  }
+
   let taskDiv = document.createElement("div");
   todoCol.appendChild(taskDiv)
   taskDiv.classList.add("taskDivP2")
@@ -52,6 +62,17 @@ function add(params) {
   
   let taskSelect = document.createElement(`select`)
   taskDivChild.appendChild(taskSelect);
+
+  taskSelect.addEventListener("change", selectColumn = ()=> {
+    const selectedOption = taskSelect.value;
+    if (selectedOption === `TodoCol`){
+      switchtoTodo()
+    }else if (selectedOption === "DoingCol") {
+      switchToDoing()
+    } else if (selectedOption === "DoneCol"){
+      switchToDone()
+    }
+  })
 
 
   let optionSelectTodo = document.createElement(`option`);
