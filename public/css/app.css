@@ -11914,7 +11914,7 @@ body {
   box-sizing: border-box;
 }
 
-header {
+.headerPage1 {
   height: 70px;
   background: #849121;
   display: flex;
@@ -12007,4 +12007,9 @@ nav {
 
 .hidden {
   display: none;
+}
+
+.page2Header {
+  height: 70px;
+  background-color: blue;
 }
