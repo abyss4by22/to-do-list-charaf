@@ -11981,22 +11981,30 @@ nav {
 }
 
 .green {
-  border: 0;
+  border: 1px solid white;
   background-color: green;
   height: 40%;
   width: 15%;
 }
 
 .red {
-  border: 0;
+  border: 1px solid white;
   background-color: red;
   height: 40%;
   width: 15%;
 }
 
 .modify {
-  border: 0;
+  border: 1px solid white;
   background-color: yellow;
   height: 40%;
   width: 15%;
+}
+
+.greenify {
+  background-color: green;
+}
+
+.hidden {
+  display: none;
 }
